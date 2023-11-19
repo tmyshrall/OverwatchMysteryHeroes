@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.background {
+  display: flex;
+  background-image: url(images/background4.png);
+  background-size: cover;
+  overflow: hidden;
+  position: relative; 
+}
+
+.images img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin: 2%;
+  user-select: none;
+  position: relative;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+}
+
+.images img:hover {
+  transform: scale(1.1); 
+}
+
+.checked {
+  opacity: 0.4; 
+}

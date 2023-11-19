@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overwatch Mystery Heroes</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="background" style="user-select: none;">
+  <div class="images">
+    <img src="images/ana.png" onclick="toggleImage(this)">
+    <img src="images/ashe.png" onclick="toggleImage(this)">
+    <img src="images/baptiste.png" onclick="toggleImage(this)">
+    <img src="images/bastion.png" onclick="toggleImage(this)">
+    <img src="images/brigitte.png" onclick="toggleImage(this)">
+    <img src="images/cassidy.png" onclick="toggleImage(this)">
+    <img src="images/doomfist.png" onclick="toggleImage(this)">
+    <img src="images/dva.png" onclick="toggleImage(this)">
+    <img src="images/echo.png" onclick="toggleImage(this)">
+    <img src="images/genji.png" onclick="toggleImage(this)">
+    <img src="images/hanzo.png" onclick="toggleImage(this)">
+    <img src="images/illari.png" onclick="toggleImage(this)">
+    <img src="images/junkerQueen.png" onclick="toggleImage(this)">
+    <img src="images/junkrat.png" onclick="toggleImage(this)">
+    <img src="images/kiriko.png" onclick="toggleImage(this)">
+    <img src="images/lifeweaver.png" onclick="toggleImage(this)">
+    <img src="images/lucio.png" onclick="toggleImage(this)">
+    <img src="images/mercy.png" onclick="toggleImage(this)">
+    <img src="images/mei.png" onclick="toggleImage(this)">
+    <img src="images/moira.png" onclick="toggleImage(this)">
+    <img src="images/orisa.png" onclick="toggleImage(this)">
+    <img src="images/pharah.png" onclick="toggleImage(this)">
+    <img src="images/ramattra.png" onclick="toggleImage(this)">
+    <img src="images/reaper.png" onclick="toggleImage(this)">
+    <img src="images/reinhardt.png" onclick="toggleImage(this)">
+    <img src="images/roadhog.png" onclick="toggleImage(this)">
+    <img src="images/sigma.png" onclick="toggleImage(this)">
+    <img src="images/sojourn.png" onclick="toggleImage(this)">
+    <img src="images/soldier76.png" onclick="toggleImage(this)">
+    <img src="images/sombra.png" onclick="toggleImage(this)">
+    <img src="images/symmetra.png" onclick="toggleImage(this)">
+    <img src="images/torbjorn.png" onclick="toggleImage(this)">
+    <img src="images/tracer.png" onclick="toggleImage(this)">
+    <img src="images/widowmaker.png" onclick="toggleImage(this)">
+    <img src="images/winston.png" onclick="toggleImage(this)">
+    <img src="images/wreackingBall.png" onclick="toggleImage(this)">
+    <img src="images/zenyatta.png" onclick="toggleImage(this)">
+    <img src="images/zarya.png" onclick="toggleImage(this)">
+  </div>
+  <script>
+    function toggleImage(img) {
+      img.classList.toggle("checked");
+    }
+  </script>
+  <script>
+    
+    const images = [
+      'images/background1.png',
+      'images/background2.png',
+      'images/background3.png',
+      'images/background4.png',
+      'images/background5.png',
+      'images/background6.png',
+      'images/background7.png',
+      'images/background8.png',
+      'images/background9.png',
+      'images/background10.png',
+      
+    ];
+  
+    
+    function getRandomImage() {
+      const randomIndex = Math.floor(Math.random() * images.length);
+      return images[randomIndex];
+    }
+  
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const imageUrl = getRandomImage();
+      document.body.style.backgroundImage = `url(${imageUrl})`;
+    });
+  
+  </script>
+</body>
+</html>
